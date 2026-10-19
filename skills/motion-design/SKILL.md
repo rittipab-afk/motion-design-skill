@@ -5,11 +5,14 @@ description: >
   Provides timing, easing, choreography, and Disney animation principles adapted for UI.
   Use when creating animations, transitions, micro-interactions, loading states, page transitions,
   scroll-triggered effects, or any motion work. Works with CSS, Framer Motion, GSAP, Lottie, Spring,
-  or any animation system.
+  or any animation system. Also use for PowerPoint or Google Slides animations and transitions in
+  technical presentations (PI trend charts, before/after process improvement, results slides), and to
+  decide whether a slide or one-pager should be animated at all.
 license: MIT
 metadata:
   author: LottieFiles
-  version: "1.0.0"
+  version: "1.0.0-slides"
+  modified-by: rittipab-afk (added presentation-slides pattern)
 ---
 
 # Motion Design Skill
@@ -24,8 +27,10 @@ Use this skill when:
 - Planning scroll-triggered or progress-based animations
 - Establishing brand motion identity
 - Choreographing multi-element sequences
+- Animating PowerPoint / Google Slides decks or planning one-pagers for technical data (PI trends, improvement results) → read [patterns/presentation-slides.md](patterns/presentation-slides.md) first; its rules override the UI defaults below
 
 **Decision tree:**
+0. Is it a slide deck or one-pager? → [patterns/presentation-slides.md](patterns/presentation-slides.md) (static first, Corporate, no ambient)
 1. Does it serve a functional purpose (feedback, guidance)? → Timing rules for responsiveness
 2. Does it express brand personality? → Motion Personality archetypes
 3. Does it tell a story or guide attention? → Disney principles + choreography
@@ -313,3 +318,4 @@ Select ONE archetype per project. Apply consistently.
 - [state-feedback.md](patterns/state-feedback.md) — Success, error, loading, hover
 - [ambient-continuous.md](patterns/ambient-continuous.md) — Looping, breathing, parallax
 - [multi-element.md](patterns/multi-element.md) — Stagger + choreography recipes
+- [presentation-slides.md](patterns/presentation-slides.md) — PowerPoint/Slides decks and one-pagers: PI trend reveal recipe, seconds-based timing, static-vs-animated decision
